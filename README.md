@@ -13,7 +13,7 @@ This project is developed as part of the DevScale Bootcamp to complete an assign
 ## Requirements
 Before running the application, ensure you have the following installed:
 
-- Python 3.x
+- Python 3.9 above
 - Required Python libraries (install via `requirements.txt` if available)
 
 ## Installation
