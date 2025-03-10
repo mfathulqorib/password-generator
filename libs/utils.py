@@ -8,6 +8,10 @@ class AccountsManagement:
     def add_account(self, website, user_name, password):
         account = (website, user_name, password)
         self.accounts.append(account)
+    
+    def get_account(self, target_website, target_user_name):
+        selected_account = [(website, user_name, password) for website, user_name, password in self.accounts if website == target_website and user_name == target_user_name]
+        return selected_account
 
 
 class PassworgGenerator:
@@ -21,6 +25,7 @@ class PassworgGenerator:
 
         # Define character sets
         letters_upper = string.ascii_uppercase
+        letters_lower = string.ascii_lowercase
         digits = string.digits
         symbols = string.punctuation
 
@@ -28,7 +33,8 @@ class PassworgGenerator:
         password_chars = (
             [secrets.choice(digits) for _ in range(nums)] +
             [secrets.choice(symbols) for _ in range(special_chars)] +
-            [secrets.choice(letters_upper) for _ in range(uppercase)]
+            [secrets.choice(letters_upper) for _ in range(uppercase)] +
+            [secrets.choice(letters_lower)]
         )
 
         # Fill the remaining length with random characters
