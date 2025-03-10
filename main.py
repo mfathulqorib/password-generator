@@ -1,4 +1,4 @@
-from libs.utils import PasswordGenerator, AccountsManagement  # Fixed typo
+from libs.utils import PasswordGenerator, AccountsManagement
 import pandas as pd
 import streamlit as st
 from datetime import datetime
@@ -58,16 +58,16 @@ if page == "Add Account":
 
     if st.session_state.generated_password:
         st.write(f"**Your account for {st.session_state.website}:**")
-        st.write(f"**Username/email:**\n{st.session_state.user_name}")
+        st.write(f"**Username/email:**  \n{st.session_state.user_name}")
         
         # Show password with a "show/hide" option for better security
         password_placeholder = st.empty()
         show_password = st.checkbox("Show password", value=False)
         
         if show_password:
-            password_placeholder.write(f"**Password:**\n{st.session_state.generated_password}")
+            password_placeholder.write(f"**Password:**  \n{st.session_state.generated_password}")
         else:
-            password_placeholder.write("**Password:**\n*******")
+            password_placeholder.write("**Password:**  \n \*\*\*\*\*\*\*")
                 
         save_button = st.button("Save password")
 
