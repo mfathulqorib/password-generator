@@ -47,5 +47,5 @@ Before running the application, ensure you have the following installed:
 This project is open-source and can be modified as needed.
 
 ## Author
-mfathulqoribmfathulqorib, with mentoring from DevScale ❤️
+mfathulqorib, with mentoring from DevScale ❤️
 
