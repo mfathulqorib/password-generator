@@ -27,7 +27,7 @@ if page == "Add Account":
     st.session_state.user_name = st.text_input("Username/email", value=st.session_state.user_name)
 
     length = st.number_input("Password length", value=16, step=1)
-    nums = st.number_input("Number char in password", value=1, step=1)
+    nums = st.number_input("Number in password", value=1, step=1)
     special_chars = st.number_input("Special char in password", value=1, step=1)
     uppercase = st.number_input("Uppercase char in password", value=1, step=1)
 
