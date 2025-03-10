@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import time
 
-st.title("Password Generator")
+st.title("🔑 Password Generator")
 
 # Initialize session state 
 if "generated_password" not in st.session_state:
