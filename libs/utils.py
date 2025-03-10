@@ -14,7 +14,7 @@ class AccountsManagement:
         return selected_account
 
 
-class PassworgGenerator:
+class PasswordGenerator:
     def __init__(self):
         self.password = ""
 
